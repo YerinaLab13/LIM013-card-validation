@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-with"/>
-    <title>Tarjeta de crédito válida</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" type="text/css"/>
-  </head>
 
-  <body>
-    <header>
-      <h1 id="titulo">BIOSAFETY</h1> 
-    </header>
-    <!--Pantalla 1-->
-    <main>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-with" />
+  <title>Tarjeta de crédito válida</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1 id="titulo">BIOSAFETY</h1>
+  </header>
+  <!--Pantalla 1-->
+  <main>
     <div id="inicio">
       <br>
       <h3>Bien! tienes tu carrito de compras listo.</h3>
-      <p>Recuerda que:</p>
-     
-     
+      <p></p>
+
+
       <p>Para validar tu tarjeta, dale click a continuar. </p>
       <button class="boton" id="boton">Continuar</button>
       <br><br>
@@ -27,43 +28,51 @@
 
     <!--Pantalla 2- pedir nombre y número de tarjeta (formulario)-->
     <div class="ocultar" id="datos">
-      <img src= "https://media.giphy.com/media/WQfT8elAGzW2e8t0qe/giphy.gif" width=300 length=300>
+      <h2 id= pantalla2>Validación de tarjeta</h2>
+      <img src="https://media.giphy.com/media/WQfT8elAGzW2e8t0qe/giphy.gif" width="300px" heigth="300px">
       <br>
       <p>Por favor, ingresa tu nombre y Número de tarjeta</p>
       <br>
-      <form action="" id="formulario" class="formulario" method="post"> <!--Preguntar que poner en action-->
+      <form id ="formulario" class ="formulario" method ="post">
         <label for="name">Nombre:</label><br>
         <input type="text" id="name" name="name" value=""><br><br>
-        <label for="numberCard">Número de tarjeta:</label><br> <!--Cómo poner límite de números-sin espacios-->
-        <input type="text" id="numberCard" name="number" maxlength= "16" autocomplete="off"><br><br>
-        <input type="submit" class= "boton" value="Enviar" id="send">
+        <p id= "noName"></p>
+        <label for="numberCard">Número de tarjeta:</label><br>
+        <input type="text" id="numberCard" name="number" maxlength="16" autocomplete="off" value=""><br>
+        <p id="noCard"></p><br><br>
+        <div id="tarjetaNoValida"></div>
+        <input type="submit" class="boton" value="Enviar" id="send">
       </form>
     </div>
 
     <!--Pantalla 3- Tarjeta validada-->
     <div class="ocultar" id="tarjeta válida">
       <br>
-      <img src="https://media.giphy.com/media/PnCKfm9NF1sbkgw5Sr/giphy.gif" width=300 length=300><br><br>
-      <p class="válida">Tu tarjeta ha sido validada!</p>
-      <p>Número de tarjeta: "************1234"</p><br>
+      <img src="https://media.giphy.com/media/PnCKfm9NF1sbkgw5Sr/giphy.gif" width="300px" heigth="300px"><br><br>
+      
+      <div id="validación"></div>
+      <div id="michis"></div>
       <p>Para completar tu compra dale click a Comprar</p><br>
-      <button class="boton" id= "buy">Comprar</button><br>
+      <button class="boton" id="buy">Comprar</button><br>
     </div>
 
     <!--Pantalla 4- Tarjeta no valida-->
-    <div class="ocultar" id="Tarjeta no válida">
+    <div class="ocultar" id="compraExitosa">
       <br>
-      <p class= "No valida"> Tarjeta no válida</p>
-      <p>Ocurrió un error! o el número de tarjeta es incorrecto.</p>
-      <p>Número de tarjeta: "************1357"</p>
-      <p>Para ingresar el número de tarjeta correcto, dale click a volver</p>
-      <button class="boton" id= "volver">Volver</button>
+      <!--<p class="No valida"> Tarjeta no válida</p>-->
+      <!--<div id="tarjetaNoValida"></div>-->
+      <!--<p>Ocurrió un error! o el número de tarjeta es incorrecto.</p>-->
+      <!--<p>Número de tarjeta: "************1357"</p>-->
+      <!--<p>Para ingresar el número de tarjeta correcto, dale click a volver</p>-->
+
+      <button class="boton" id="volver">Volver</button>
     </div>
 
-   </main>
+  </main>
 
-     <br>
-    <footer>BioSafety cuida tu salud.</footer>
-    <script src="index.js" type="module"></script>
-  </body>
+  <br>
+  <footer>BioSafety cuida tu salud.</footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
