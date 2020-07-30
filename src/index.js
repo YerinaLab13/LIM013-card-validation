@@ -8,7 +8,7 @@ const show = () => {
 }
 document.getElementById("boton").addEventListener("click", show);
 
-//Pantalla 2 - Datos - traer el valor de tarjeta para validfación
+//Pantalla 2 - Datos - traer el valor de tarjeta para validación
 
 //document.getElementById("send").addEventListener("click", (event)=>{
 //event.preventDefault()
@@ -18,25 +18,25 @@ send.addEventListener("click", (event) => {
     event.preventDefault()
     let name = document.getElementById("name").value;
     if (name.length == "") {
-        document.getElementById("noName").innerHTML = `Campo obligatorio`;
+        document.getElementById("noName").innerHTML = `*Campo obligatorio`;
     }
     let numberCard = document.getElementById("numberCard").value;
     if (numberCard.length == "") {
-        document.getElementById("noCard").innerHTML = `Ingrese el número de tarjeta`;
+        document.getElementById("noCard").innerHTML = `*Ingrese el número de tarjeta`;
     }
 
     // Pantalla 3- Resultados de validación
 
     let result = validator.isValid(numberCard);
-      //console.log(result);
     let mask = validator.maskify(numberCard);
-      //console.log(mask)
+     //console.log(result); 
+     //console.log(mask)
 
     let cardValid = document.getElementById("validación");
     let michis = document.getElementById("michis");
     let cardNoValid = document.getElementById("tarjetaNoValida");
 
-    if (result == true) {
+    if (result == true && numberCard !== '') {
         cardValid.innerHTML = `<p> Tarjeta válida </p>`;
         michis.innerHTML = (mask);
         document.getElementById("datos").style.display = "none";
@@ -54,8 +54,9 @@ const show4 = () => {
     document.getElementById("compraExitosa").style.display = "block";
 }
 document.getElementById("buy").addEventListener("click", show4);
-const compra = document.getElementById("compraExitosa");
-compra.innerHTML = `Gracias! tu Compra ha sido realizada con éxito`;
+//const compra = document.getElementById("compraExitosa");
+//compra.innerHTML = `Gracias! tu Compra ha sido realizada con éxito`;
+//document.getElementById("gracias");
 
 
 

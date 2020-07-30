@@ -1,3 +1,80 @@
-/*.ocultar {
+body {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    font-family: sans-serif;
+
+}
+header {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: rgb(12, 111, 150) ;
+    font-size: 40px;
+    font-family: sans-serif;
+    
+}
+
+#titulo {
+    font-size: 60px;
+    color: blanchedalmond;
+    text-shadow: -2px 0px 4px black;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 550;
+
+}
+h3 {
+    font-size: 25px;
+    font-weight: 550;
+
+}
+.boton {
+    color: white;
+    background-color: rgba(252, 142, 39, 0.952);
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 15px;
+    box-shadow: -3px 0px 8px black;
+    cursor: pointer;
+
+}
+
+.boton :hover{
+    background-color: olive;
+}
+
+.formulario {
+    background: #ccc;
+
+}
+
+.valida {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.gracias {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.vuelve {
+    font-size: 25px;
+    font-weight: 200;
+}
+footer {
+    text-align: center;
+    color: midnightblue;
+
+}
+
+.ocultar {
     display: none;
 }

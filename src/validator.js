@@ -37,7 +37,7 @@ const validator = {
     for (let i= 0 ; i< creditCardNumber.length; i++ ) {
       let num = parseInt(creditCardNumber[i]);
 
-      if ((i+1)%2 == 0) {
+      if ((i+1)%2 !== 0) {
 
         num = num*2;
         if (num>9){

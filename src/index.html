@@ -18,6 +18,7 @@
     <div id="inicio">
       <br>
       <h3>Bien! tienes tu carrito de compras listo.</h3>
+      <img src="img/inicio.jpg" width="350px"/>
       <p></p>
 
 
@@ -27,15 +28,15 @@
     </div>
 
     <!--Pantalla 2- pedir nombre y número de tarjeta (formulario)-->
-    <div class="ocultar" id="datos">
-      <h2 id= pantalla2>Validación de tarjeta</h2>
+    <div class="ocultar" id="datos"> <br/>
+      <h2 id= "pantalla2">Validación de tarjeta</h2>
       <img src="https://media.giphy.com/media/WQfT8elAGzW2e8t0qe/giphy.gif" width="300px" heigth="300px">
       <br>
       <p>Por favor, ingresa tu nombre y Número de tarjeta</p>
       <br>
       <form id ="formulario" class ="formulario" method ="post">
         <label for="name">Nombre:</label><br>
-        <input type="text" id="name" name="name" value=""><br><br>
+        <input type="text" id="name" name="name" value=""><br>
         <p id= "noName"></p>
         <label for="numberCard">Número de tarjeta:</label><br>
         <input type="text" id="numberCard" name="number" maxlength="16" autocomplete="off" value=""><br>
@@ -48,23 +49,27 @@
     <!--Pantalla 3- Tarjeta validada-->
     <div class="ocultar" id="tarjeta válida">
       <br>
-      <img src="https://media.giphy.com/media/PnCKfm9NF1sbkgw5Sr/giphy.gif" width="300px" heigth="300px"><br><br>
-      
+      <img src="https://media.giphy.com/media/PnCKfm9NF1sbkgw5Sr/giphy.gif" width="300px" height="300px"><br><br>
+      <p id="" class="valida"></p>
       <div id="validación"></div>
       <div id="michis"></div>
-      <p>Para completar tu compra dale click a Comprar</p><br>
+      <p>Para finalizar tu compra dale click a Comprar</p><br>
       <button class="boton" id="buy">Comprar</button><br>
     </div>
 
-    <!--Pantalla 4- Tarjeta no valida-->
+    <!--Pantalla 4- Compra exitosa-->
     <div class="ocultar" id="compraExitosa">
-      <br>
+      <br><br/>
+      <p class="gracias"> Gracias! Tu compra ha sido realizada con éxito</p><br/>
+      <p class="vuelve">Vuelve pronto!</p><br/>
+      <img src="img/protect.PNG" id= "gracias" width="600px"/>
+
       <!--<p class="No valida"> Tarjeta no válida</p>-->
       <!--<div id="tarjetaNoValida"></div>-->
       <!--<p>Ocurrió un error! o el número de tarjeta es incorrecto.</p>-->
       <!--<p>Número de tarjeta: "************1357"</p>-->
       <!--<p>Para ingresar el número de tarjeta correcto, dale click a volver</p>-->
-
+      <br><br/>
       <button class="boton" id="volver">Volver</button>
     </div>
 
