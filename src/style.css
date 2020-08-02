@@ -1,16 +1,44 @@
-body {
+/*body {
     align-items: center;
     text-align: center;
     margin: auto;
     font-family: sans-serif;
+    flex-direction: column;
+}*/
 
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box
 }
-header {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    background-color: rgb(12, 111, 150) ;
-    font-size: 40px;
+
+body {
+    background: #ffffff;
     font-family: sans-serif;
+    
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+
+header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(12, 111, 150) ;
+    font-size: 45px;
+    font-family: sans-serif;
+    text-align: center;
     
 }
 
@@ -39,25 +67,86 @@ h3 {
     padding-bottom: 10px;
     font-family: sans-serif;
     font-size: 18px;
-    font-weight: 800;
-    border-radius: 15px;
-    box-shadow: -3px 0px 8px black;
-    cursor: pointer;
-
-}
-
-.boton :hover{
-    background-color: olive;
-}
-
-.formulario {
-    background: #ccc;
-
-}
-
-.valida {
-    font-size: 30px;
     font-weight: 600;
+    border-radius: 15px;
+    box-shadow: -3px 1px 8px black;
+    cursor: pointer;
+    border:none;
+}
+
+
+
+
+/*----------------Formulario--------------*/
+.formulario {
+    width: 100%;
+    max-width: 1500px;
+    padding: 20px 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: -3px 2px 8px #7d8994;
+
+    /*margin: auto;*/
+    /*align-items:center;*/
+    
+}
+.formulario label{
+    display: block;
+    color: #7d8994;
+    margin-bottom: 5px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.formulario input,
+.formulario select {
+    border: 2px solid #CED6E0;
+    font-size: 18px;
+    height: 50px;
+    width: 100%;
+    padding: 5px 12px;
+    transition: .3s ease all;
+    border-radius: 8px;
+}
+
+.formulario input:hover,
+.formulario select:hover {
+    border: 2px solid #93BDED;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+    outline: rgb (4,4,4);
+}
+
+.formulario input{
+    margin-bottom: 10px;
+}
+
+.formulario .flexbox {
+    display: flex;
+    justify-content:space-between;
+}
+.formulario .expira {
+    width: 100%;
+}
+.formulario .grupo-select {
+    width: 100%;
+    margin-right: 15px;
+
+}
+
+
+.validar {
+    font-size: 30px;
+    font-weight: 400;
+    background: #bedefb;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.pcomprar {
+    font-size: 20px;
 }
 
 .gracias {
@@ -68,10 +157,13 @@ h3 {
 .vuelve {
     font-size: 25px;
     font-weight: 200;
+    text-align: center;
 }
+
 footer {
     text-align: center;
     color: midnightblue;
+    margin-bottom: 5px;
 
 }
 

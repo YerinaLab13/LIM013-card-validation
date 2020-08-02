@@ -25,6 +25,28 @@ send.addEventListener("click", (event) => {
         document.getElementById("noCard").innerHTML = `*Ingrese el número de tarjeta`;
     }
 
+ /* Select del mes
+ const formulario = document.getElementById("formulario");
+    for (let i = 1; i <= 12; i++){
+        let opcion = document.createElement("option");
+        opcion.value = i;
+        opcion.innerText = i;
+        formulario.selectMes.appendChild(opcion);
+
+    }
+
+ //Select del año
+  const yearActual = new Date().getFullYear();
+    for (let i = yearActual; i <=yearActual + 8; i++){
+        let opcion = document.createElement("option");
+        opcion.value = i;
+        opcion.innerText = i;
+        formulario.selectMes.appendChild(opcion);
+    }  */ 
+ 
+
+
+
     // Pantalla 3- Resultados de validación
 
     let result = validator.isValid(numberCard);
@@ -40,7 +62,7 @@ send.addEventListener("click", (event) => {
         cardValid.innerHTML = `<p> Tarjeta válida </p>`;
         michis.innerHTML = (mask);
         document.getElementById("datos").style.display = "none";
-        document.getElementById("tarjeta válida").style.display = "block";
+        document.getElementById("tarjetaValida").style.display = "block";
     }
     else {
         cardNoValid.innerHTML = `<p> Número de tarjeta no válida, por favor ingrese nuevamente el número de tarjeta</p>`;
@@ -50,7 +72,7 @@ send.addEventListener("click", (event) => {
 //pantalla 4- Compra Exitosa
 
 const show4 = () => {
-    document.getElementById("tarjeta válida").style.display = "none";
+    document.getElementById("tarjetaValida").style.display = "none";
     document.getElementById("compraExitosa").style.display = "block";
 }
 document.getElementById("buy").addEventListener("click", show4);
