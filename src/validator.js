@@ -2,10 +2,8 @@ const validator = {
   // ...
   isValid: function (creditCardNumber) {
   
-    // let suma = 0;
-    //for(let i=0 ; i<creditCardNumber.length ; i++){
 
-
+    // Validación de tarjeta
 
     const cadena = creditCardNumber.toString();
     const longitud = cadena.length;
@@ -31,33 +29,8 @@ const validator = {
       return false;
     }
   }
-
-
-   /* let suma = 0;
-    for (let i= 0 ; i< creditCardNumber.length; i++ ) {
-      let num = parseInt(creditCardNumber[i]);
-
-      if ((i+1)%2 !== 0) {
-
-        num = num*2;
-        if (num>9){
-          let num1 = parseInt(num/10);
-          let num2 = num%10;
-          num = num1+ num2;
-        }
-
-      }
-      suma = suma+num;
-    }
-     if (suma%10==0){
-       return true;
-     }
-     else{
-       return false;
-     }
-    }*/
      
-
+    // Enmascarar números de tarjeta
 
   ,maskify: function (creditCardNumber) {
     let maskify2 = "";
