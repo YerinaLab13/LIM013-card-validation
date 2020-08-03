@@ -338,19 +338,19 @@ Este proyecto es generado con la finalidad de validación de tarjetas de crédit
 
 #### 1. Página de compra
 
-![](Card-final1.png)
+![](img-prototipos/Card-final1.png)
 
 #### 2. Formulario
 
-![](Card-final2.png)
+![](img-prototipos/Card-final2.png)
 
 #### 3. Resultado de validación de tarjeta
 
-![](Card-final3.png)
+![](img-prototipos/Card-final3.png)
 
 #### 4. Compra exitosa
 
-![](Card-final4.png)
+![](img-prototipos/Card-final4.png)
 
 ## Investigación UX
 
@@ -370,7 +370,7 @@ Además es una plataforma muy fácil de usar y amigable para los clientes.
 
 #### 4. Primer prototipo en papel
 
-![](prototipo-Card-Validation.jpg)
+![](img-prototipos/prototipo-Card-Validation.jpeg)
 
 #### 5.Feedback de prototipo.
 
@@ -382,7 +382,7 @@ Se realizó la muestra de primer prototipo en papel y figma a compañeras de equ
 
 6. ### Imágen de prototipo final.
 
-![](Untitled.png)
+![](img-prototipos/Untitled.png)
 
 
 
