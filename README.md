@@ -318,3 +318,74 @@ Organización del Trabajo:
   esperamos que hagas todo eso desde este proyecto. Iremos profundizando poco a
   poco a lo largo del -_bootcamp_.
 * [Blog: cómo funciona el algoritmo de Luhn](http://www.quobit.mx/asi-funciona-el-algoritmo-de-luhn-para-generar-numeros-de-tarjetas-de-credito.html).
+
+
+# *PROYECTO CARD VALIDATION "BIOSAFETY"*
+
+Para acceder al proyecto:
+1. Crear una carpeta en tu PC
+2. Ingresar a GitHub
+3. Seleccionar el repositorio: YerinaLab13/LIM013-card-validation
+4. Realizar un Fork
+5. Code y clonar el repositorio para pegarlo en la carpeta creada en tu PC.
+6. Abrir git bash en la carpeta y hacer git clone.
+
+## Descripción
+
+Este proyecto es generado con la finalidad de validación de tarjetas de crédito.
+
+### Imágenes del proyecto final:
+
+#### 1. Página de compra
+
+![](Card-final1.png)
+
+#### 2. Formulario
+
+![](Card-final2.png)
+
+#### 3. Resultado de validación de tarjeta
+
+![](Card-final3.png)
+
+#### 4. Compra exitosa
+
+![](Card-final4.png)
+
+## Investigación UX
+
+#### 1. Quienes son los principales usuarios del producto
+
+Los usuarios pueden ser todo negocio online enfocado a ventas de productos de bio-seguridad, que por la coyuntura hay bastante demanda y precisamente para evitar contacto físico, venden a través de páginas web y redes sociales
+
+#### 2. Cuáles son los objetivos de estos usuarios en relación con tu producto.
+
+El objetivo es que los usuarios realicen sus ventas de manera eficaz y segura en todo sentido (salud y economía).
+
+
+#### 3. Cómo crees que el producto que estás creando está resolviendo sus problemas.
+
+Pueden entregar los productos con la seguridad de que ya fueron pagados y no habrá contacto en cuanto a intercambio de dinero.
+Además es una plataforma muy fácil de usar y amigable para los clientes.
+
+#### 4. Primer prototipo en papel
+
+![](prototipo-Card-Validation.jpg)
+
+#### 5.Feedback de prototipo.
+
+Se realizó la muestra de primer prototipo en papel y figma a compañeras de equipo, amistades y familiares.
+
+- Que el mensaje de tarjeta no válida se muestre en la misma pantalla de ingreso de datos, para que pueda volver a ingresar el número.
+- Utilizar sombras en el diseño de la página.
+- Eliminar el botón de la última página.
+
+6. ### Imágen de prototipo final.
+
+![](Untitled.png)
+
+
+
+
+
+

@@ -13,7 +13,7 @@
 }
 
 body {
-    background: #ffffff;
+    background: #F2F3F5;
     font-family: sans-serif;
     
 }
@@ -21,6 +21,8 @@ body {
 .contenedor {
     width: 90%;
     max-width: 1000px;
+    height: 90%;
+    max-height: 900px;
     padding: 40px 20px;
     margin: auto;
     display: flex;
@@ -28,13 +30,15 @@ body {
     background: #fff;
     align-items: center;
     text-align: center;
+    margin-bottom: 2px;
+    padding-bottom: 60px;
     position: relative;
 }
 
 
 header {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     background-color: rgb(12, 111, 150) ;
     font-size: 45px;
     font-family: sans-serif;
@@ -84,7 +88,7 @@ h3 {
     padding: 20px 20px;
     background: #fff;
     border-radius: 10px;
-    box-shadow: -3px 2px 8px #7d8994;
+    box-shadow: -3px 2px 8px 2px #7d8994;
 
     /*margin: auto;*/
     /*align-items:center;*/
@@ -140,9 +144,11 @@ h3 {
 .validar {
     font-size: 30px;
     font-weight: 400;
-    background: #bedefb;
+    background: rgb(250, 248, 248);
     border-radius: 10px;
-    padding: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    box-shadow:-3px 1px 8px 1px  #7d8994;
 }
 
 .pcomprar {
@@ -161,10 +167,18 @@ h3 {
 }
 
 footer {
-    text-align: center;
-    color: midnightblue;
-    margin-bottom: 5px;
-
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    color:  rgb(12, 111, 150) ;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
 }
 
 .ocultar {
